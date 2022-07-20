@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+        #cabecera {
+            background-image: url("header.jpg");
+
+        }
+
+        #linea {
+            border-bottom: 2px solid green;
+        }
+
+        h2 {
+            font-family: 'Kavoon', cursive;
+            color: white;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        #linea div:hover a {
+
+            background-color: gray;
+            color: white;
+            display: block;
+            cursor: hand;
+        }
+
+        .fondo {
+
+            background-color: rgba(255, 255, 255, 0.2);
+
+        }
+
+        p {
+            text-align: justify;
+            font-size: 10px;
+
+        }
+
+        .bordeOs {
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+
+        }
+
+        .bordeI {
+            border-right: 1px solid green;
+
+        }
+
+        p::first-letter {
+
+            color: green;
+            font-size: 2em;
+            font-weight: bold;
+
+        }
+
+        .verdeOscuro {
+            color: green;
+        }
+
+
+        .imagen1 {
+
+
+            display: block;
+            width: 15em;
+            height: 15em;
+            overflow: hidden;
+            opacity: 0.5;
+
+
+        }
+
+        h3 {
+            font-size: 1em;
+            color: green;
+            border-bottom: 3px solid green;
+            letter-spacing: 0.25em;
+        }
+
+        h3::first-letter {
+            color: yellowgreen;
+        }
+
+        .negrita {
+            font-weight: bold;
+        }
+
+        .texto1D {
+            text-align: left;
+            border: 1px solid black;
+
+
+        }
+
+        .texto2D {
+            text-align: center;
+            border: 1px solid black;
+
+
+        }
+
+        .texto3D {
+
+            border: 1px solid black;
+            text-align: right;
+            word-spacing: 1em;
+
+        }
+
+        .texto4D {
+            text-align: justify;
+            border: 1px solid black;
+            line-height: 1.7em;
+
+        }
+
+        #fotos .imagen2 {
+
+
+
+            width: 15em;
+            height: 15em;
+
+
+        }
+
+        #fotos {
+            background: url("fondo_flores3a.png") bottom left no-repeat, url("fondo_flores3.png") bottom right no-repeat;
+            width: auto;
+        }
+
+
+
+        .oscuro {
+            background-color: green;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .textoP {
+            clear: both;
+            color: white;
+            opacity: 0.3;
+            margin: 1%;
+        }
+
+        .Bderecha {
+            border-right: 2px solid white;
+
+        }
+
+
+
+        /* Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) {
+            #desaparecer {
+                display: none;
+            }
+
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+
+            /* .Bderecha {
+            display: none;
+
+        } */
+            #desaparecer {
+                display: none;
+            }
+
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            /* .Bderecha {
+            display: inline;
+
+        } */
+        }
+
+        /*  X-Large devices (large desktops, 1200px and up) 
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } 
+ */
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="row" id="fotos">
+
+        <div class="col-xs-12  col-lg-8   p-3" name="CalleD">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-xl-12 p-1" name="CalleD1">
+                    <h3>Subtitulo</h3>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-xl-12 p-1" name="CalleD1">
+                    <div class="texto1D"><span class="negrita"> Esto es un texto alineado a la izquierda</span>
+                        lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                        Lorem
+                        Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando
+                        un
+                        impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+                        textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</div>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-xl-12 p-1" name="CalleD1">
+                    <div class="texto2D"><span class="negrita"> Esto es un texto centrado </span>
+                        lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                        Lorem
+                        Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando
+                        un
+                        impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+                        textos y los mezcló de tal manera que logró hacer un libro de textos especimen.lorem
+                        Ipsum
+                        es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                        sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del
+                        T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                        mezcló
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-lg-12 col-xl-12 p-1" name="CalleD1">
+                    <div class="texto3D"><span class="negrita"> Esto es un texto alineado a la derecha y con una
+                            separacion entre palabras mayor</span>
+                        Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que
+                        se
+                        dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera
+                        que
+                        logró hacer un libro de textos especimen.lorem Ipsum es simplemente el texto de relleno
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-xl-12 p-1" name="CalleD1">
+                    <div class="texto4D"><span class="negrita">Esto es un texto justificado y una altura de
+                            linea
+                            mayor</span>
+
+                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                        cuando
+                        un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería
+                        de
+                        textos y los mezcló de tal manera que logró hacer un libro de textos especimen.lorem
+                        Ipsum
+                        es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                        sido
+                        el texto de relleno estándar de las industrias desde el Lorem Ipsum ha sido el texto de
+                        relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                        persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                        manera que logró hacer un libro de textos especimen.lorem Ipsum es simplemente el texto
+                        de
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 order-md-first col-lg-4    bordeI" name="CalleI">
+            <div class="row text-center">
+                <div class="col-xs-12 col-lg-12 col-xl-12" name="CalleI1">
+                    <p class="bordeOs"><span class="verdeOscuro">Noticia</span> 1 lorem Ipsum es simplemente el
+                        texto de relleno de
+                        las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+                        las
+                        industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la
+                        imprenta) desconocido usó una galería de textos imprenta) desconocido usó una galería de
+                        textos imprenta) desconocido usó una galería de textos imprenta) desconocido usó una
+                        galería
+                        de textos
+                    </p>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-xl-12" name="CalleI1">
+                    <p class="bordeOs"><span class="verdeOscuro">Noticia</span> 1 lorem Ipsum es simplemente el
+                        texto de relleno de
+                        las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+                        las
+                        industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la
+                        imprenta) desconocido usó una galería de textos imprenta) desconocido usó una galería de
+                        textos imprenta) desconocido usó una galería de textos imprenta) desconocido usó una
+                        galería
+                        de textos
+                    </p>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-xl-12" name="CalleI1">
+                    <p class="bordeOs"><span class="verdeOscuro">Noticia</span> 1 lorem Ipsum es simplemente el
+                        texto de relleno de
+                        las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+                        las
+                        industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la
+                        imprenta) desconocido usó una galería de textos imprenta) desconocido usó una galería de
+                        textos imprenta) desconocido usó una galería de textos imprenta) desconocido usó una
+                        galería
+                        de textos
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12 p-1 oscuro " name="CalleA">
+        <div class="row text-center">
+            <div class="col-xs-6 col-sm-6 col-lg-3 col-xl-3" class="Bderecha" name="CalleA1">Aviso legal
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-3 col-xl-3" class="Bderecha" name="CalleA1">Condiciones de uso
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-3 col-xl-3" class="Bderecha" name="CalleA1">Derechos de autor
+            </div>
+            <div class="col-xs-6 col-sm-6 col-lg-3 col-xl-3 " name="CalleA1">Copyright yo
+            </div>
+        </div>
+        <div class="textoP">El texto del footer se ve siempre en mayusculas aunque el html,no esta en mayusculas
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+
+</html>
